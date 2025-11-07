@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ThinkPlus — Crack CAT, IPMAT, CLAT & More</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- NAV -->
+  <header class="nav-wrap">
+    <div class="container nav-container">
+      <a class="brand" href="#">ThinkPlus</a>
+      <nav class="nav">
+        <a href="#courses">Courses</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact" class="btn btn-cta">Enroll</a>
+      </nav>
+      <button id="nav-toggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home" aria-label="Hero banner">
+    <div class="container hero-inner">
+      <h1>Crack CAT, IPMAT, CLAT & More</h1>
+      <p class="lead">Structured programs • Expert mentors • Mock series & analytics</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="#courses">View Courses</a>
+        <a class="btn btn-outline" href="#contact">Free Counselling</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY / STATS -->
+  <section class="stats-section">
+    <div class="container stats-grid">
+      <div class="stat-card">
+        <div class="stat-num">400+</div>
+        <div class="stat-label">Happy Students</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">10+</div>
+        <div class="stat-label">Years of Faculty Experience</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">95%</div>
+        <div class="stat-label">Success Growth (avg)</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COURSES -->
+  <section id="courses" class="section container">
+    <h2 class="section-title">Popular Courses</h2>
+    <p class="section-sub">Designed for focused preparation and real exam practice</p>
+
+    <div class="grid three">
+      <article class="card">
+        <h3>CAT Coaching</h3>
+        <p class="muted">MBA Entrance Preparation — Quant, DILR, VARC</p>
+        <ul class="meta">
+          <li>Duration: 6 months</li>
+          <li>Mock Series & Analytics</li>
+        </ul>
+        <div class="card-actions">
+          <button class="btn btn-outline js-contact" data-course="CAT">Contact for Fee</button>
+          <a class="btn btn-primary" href="#contact">Enroll Now</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h3>IPMAT Coaching</h3>
+        <p class="muted">Integrated Program in Management Test — Math & Verbal</p>
+        <ul class="meta">
+          <li>Duration: 5 months</li>
+          <li>Sectional tests & interview prep</li>
+        </ul>
+        <div class="card-actions">
+          <button class="btn btn-outline js-contact" data-course="IPMAT">Contact for Fee</button>
+          <a class="btn btn-primary" href="#contact">Enroll Now</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h3>CLAT Coaching</h3>
+        <p class="muted">Undergrad & Postgrad Law Entrance — Legal Aptitude</p>
+        <ul class="meta">
+          <li>Duration: 6 months</li>
+          <li>Reading + Legal Aptitude practice</li>
+        </ul>
+        <div class="card-actions">
+          <button class="btn btn-outline js-contact" data-course="CLAT">Contact for Fee</button>
+          <a class="btn btn-primary" href="#contact">Enroll Now</a>
+        </div>
+      </article>
+    </div>
+
+    <div class="center mt-3">
+      <a class="btn btn-link" href="#contact">Contact us for other exams →</a>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" class="section bg-light">
+    <div class="container">
+      <h2 class="section-title text-center">Student Success Stories</h2>
+      <div class="carousel" id="testi-carousel" aria-live="polite">
+        <div class="carousel-track">
+          <blockquote class="testimonial">
+            <p class="quote">"ThinkPlus helped me build the accuracy and speed I needed — got a 99.7 percentile in CAT!"</p>
+            <footer class="t-author">— Aarav, IIM Aspirant</footer>
+          </blockquote>
+
+          <blockquote class="testimonial">
+            <p class="quote">"CLAT coaching was focused & practical. Mentor feedback improved my legal aptitude drastically."</p>
+            <footer class="t-author">— Meera, CLAT Topper</footer>
+          </blockquote>
+
+          <blockquote class="testimonial">
+            <p class="quote">"Mocks + analytics at ThinkPlus showed exactly where I needed to improve — very effective."</p>
+            <footer class="t-author">— Rohan, IPMAT Candidate</footer>
+          </blockquote>
+        </div>
+
+        <div class="carousel-controls">
+          <button class="dot active" data-index="0" aria-label="testimonial 1"></button>
+          <button class="dot" data-index="1" aria-label="testimonial 2"></button>
+          <button class="dot" data-index="2" aria-label="testimonial 3"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section container">
+    <div class="contact-grid">
+      <div class="contact-card">
+        <h2>Contact / Enroll</h2>
+        <p class="muted">Request a free counselling call — we'll guide you on the best program.</p>
+
+        <form id="enrollForm" class="form">
+          <input name="name" placeholder="Full name" required />
+          <input name="email" placeholder="Email" type="email" required />
+          <input name="phone" placeholder="Phone (WhatsApp)" required />
+          <select name="course" required>
+            <option value="">Select Course</option>
+            <option value="CAT">CAT</option>
+            <option value="IPMAT">IPMAT</option>
+            <option value="CLAT">CLAT</option>
+            <option value="Other">Other</option>
+          </select>
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Request Callback</button>
+            <a class="btn btn-outline" id="whatsapp" href="https://wa.me/919999999999?text=Hi%20ThinkPlus%2C%20I%20am%20interested%20in%20your%20courses" target="_blank" rel="noopener">Chat on WhatsApp</a>
+          </div>
+          <p id="form-msg" class="muted small" aria-live="polite"></p>
+        </form>
+      </div>
+
+      <aside class="contact-info">
+        <h3>Reach Us</h3>
+        <p class="muted">Email: contact@thinkplusedu.com<br/>Phone: +91-XXXXXXXXXX</p>
+        <div class="maps">
+          <!-- lightweight map placeholder -->
+          <img alt="office placeholder map" src="https://images.pexels.com/photos/21014/pexels-photo.jpg" />
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> ThinkPlus — All rights reserved.</div>
+      <div class="footer-links">
+        <a href="#courses">Courses</a> · <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a id="wa-fab" href="https://wa.me/919999999999?text=Hi%20ThinkPlus%2C%20I%20am%20interested" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">🟢</a>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
